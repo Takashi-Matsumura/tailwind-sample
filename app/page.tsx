@@ -14,8 +14,8 @@ export default function Home() {
       navigator.vibrate(100);
       // console.log("vibrate...");
     }
-    // const audio = new Audio("/sound/PC-Mouse06-2.mp3");
-    // audio.play();
+    const audio = new Audio("/sound/PC-Mouse06-2.mp3");
+    audio.play();
     // console.log("audio playing...");
   };
 
