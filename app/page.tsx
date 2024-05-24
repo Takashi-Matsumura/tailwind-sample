@@ -12,7 +12,7 @@ export default function Home() {
     if (navigator.vibrate) {
       // Vibrate for 100ms
       navigator.vibrate(100);
-      // console.log("vibrate...");
+      console.log("vibrate...");
     }
     const audio = new Audio("/sound/PC-Mouse06-2.mp3");
     audio.play();
