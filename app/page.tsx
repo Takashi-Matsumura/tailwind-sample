@@ -10,7 +10,7 @@ export default function Home() {
 
   const handleClick = () => {
     setLike(like + 1);
-    notification("success");
+    notification("error");
   };
 
   return (
