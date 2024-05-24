@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@awesome-cordova-library/taptic-engine": "^1.0.1",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",

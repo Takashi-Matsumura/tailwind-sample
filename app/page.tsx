@@ -1,16 +1,17 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaHeart } from "react-icons/fa";
-import useTapicEngineIos from "@awesome-cordova-library/taptic-engine/lib/react";
 
 export default function Home() {
   const [like, setLike] = useState(0);
-  const { notification } = useTapicEngineIos();
 
   const handleClick = () => {
     setLike(like + 1);
-    notification("error");
+    if (navigator.vibrate) {
+      // Vibrate for 100ms
+      navigator.vibrate(100);
+    }
   };
 
   return (
